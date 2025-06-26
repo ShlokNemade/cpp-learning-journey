@@ -1,3 +1,41 @@
+/*
+Problem Name: Structured Salary Slip Generator
+
+Problem Statement: Design a program that generates a well-formatted salary slip showing two columns: Earnings and Deductions, based on base salary and fixed component values.
+
+Input Format:
+Line 1: Full name
+Line 2: Designation
+Line 3: Base salary
+
+________________________________________________________________
+ABC Pvt. Ltd.
+Salary Slip                   
+________________________________________________________________
+Name:         (full name)
+Designation:  SDE
+________________________________________________________________
+Earnings            Amount        Deductions         Amount
+________________________________________________________________
+Basic Salary        Rs.50000      Income Tax(5%)     Rs.2500.00
+HRA (20%)           Rs.20000      Company Charges    Rs.800.00
+Medical Allowance   Rs.1250       
+________________________________________________________________
+Total Earnings      Rs.61250.00   Total Deductions   Rs.3300.00
+________________________________________________________________
+Net Salary          Rs.57950.00
+________________________________________________________________
+
+Constraints:
+HRA = 20% of base salary
+Medical Allowance = Rs.1250
+Income Tax = 5% of base salary
+Company Charges = Rs.800
+All currency values must be printed with 2 digits after the decimal point
+Company name must be stored as a constant
+Align all sections and columns as shown
+Round off all computed values to 2 decimal places if needed
+*/
 #include <iostream>
 #include <iomanip>
 
