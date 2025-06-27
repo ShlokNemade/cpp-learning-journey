@@ -24,7 +24,10 @@ int main(){
     // Use % 7 to wrap the result within a 0–6 range
     // Add 1 to shift back to the original 1–7 day format
     expected_day = ( (current_day - 1 - (days_to_go_back % 7) + 7) % 7 ) + 1;
-
+    
+    //alternate approach 
+    // expected_day =( (current_day - (days_to_go_back%7) + 7)%7 + 6 )%7 +1;    
+    // cutrrent_day - (days_to_go_back%7) goes back in number of days which are needed +7 to avoid negative %7 to kerp in range then (..+6)%7 rotates to left by 1 then +1 to make it in range of 1-7
     std::cout<<"The day before "<<days_to_go_back<<" Days would be: "<<expected_day;
     return 0;
 }
